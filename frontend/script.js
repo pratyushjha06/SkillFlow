@@ -1,3 +1,9 @@
+//Navbar toggle
+function toggleMenu() {
+    const navbar = document.getElementById("navbar");
+    navbar.classList.toggle("show");
+}
+
 
 // Explore Now Button Scroll
 function exploreNow() {
@@ -7,10 +13,12 @@ function exploreNow() {
     }
 }
 
+
 // Login Button Alert
 document.getElementById("loginButton").addEventListener("click", function () {
 
 });
+
 
 // Smooth Scroll for Navbar links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -22,6 +30,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
 
 // Contact form validation (optional)
 const contactForm = document.querySelector(".contact-form");

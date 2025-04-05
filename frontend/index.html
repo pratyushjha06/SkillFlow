@@ -5,45 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SkillFlow - AI Learning Platform</title>
-    <link rel="stylesheet" href="style.css"></style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    </style>
 </head>
 
 <body>
     <header>
         <h1 onclick="location.href='#home'">SkillFlow</h1>
-        <nav>
+
+        <div class="menu-toggle" onclick="toggleMenu()">
+            &#9776;
+        </div>
+
+        <nav id="navbar">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#courses">Courses</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><button id="loginButton" ><a href="login.html">Login</a></button></li>
+                <li><a href="login.html" class="login-button">Login</a></li>
             </ul>
         </nav>
-        
-          
     </header>
 
+
     <main>
+
         <section id="home">
             <div class="home-content">
                 <h2>Khel Khel Mai Gyan</h2>
-                <p>Enhance your skills with our AI-powered learning platform. Personalized paths, real-time assessments,
-                    and interactive content await you.</p>
+                <p>
+                    Enhance your skills with our AI-powered learning platform. Personalized paths,
+                    real-time assessments, and interactive content await you.
+                </p>
             </div>
-            
-
 
             <div class="home-images">
-                <img src="skills.png" alt="Learning Illustration">
-                <img src="play.png" alt="Learning Illustration">
-                <img src="learner.png" alt="learning pacer">
+                <img src="/assets/skills.png" alt="Learning Illustration">
+                <img src="/assets/play.png" alt="Learning Illustration">
+                <img src="/assets/learner.png" alt="learning pacer">
             </div>
+
+            <!-- Mobile Background Slider -->
+            <div class="mobile-slider">
+
+            </div>
+
 
             <div class="button-container">
                 <button onclick="exploreNow()">Explore Now</button>
             </div>
         </section>
+
+
+
         <section id="about">
             <h2>About SkillFlow</h2>
             <p class="about-content">
@@ -53,26 +69,26 @@
 
             <div class="features">
                 <div class="feature-box">
-                    <img src="aiml.png" alt="AI Learning">
+                    <img src="/assets/aiml.png" alt="AI Learning">
                     <h3>AI-Powered Learning</h3>
                     <p>Get a tailored learning experience with AI-driven insights.</p>
                 </div>
 
                 <div class="feature-box">
-                    <img src="content.png" alt="Interactive Content">
+                    <img src="/assets/content.png" alt="Interactive Content">
                     <h3>Interactive Content</h3>
                     <p>Engage with hands-on projects and gamified learning.</p>
                 </div>
 
                 <div class="feature-box">
-                    <img src="feedback.png" alt="Real-Time Feedback">
+                    <img src="/assets/feedback.png" alt="Real-Time Feedback">
                     <h3>Real-Time Feedback</h3>
                     <p>Track your progress with instant assessments.</p>
                 </div>
             </div>
-
-
         </section>
+
+
         <section id="courses">
             <h2>Our Courses</h2>
             <p class="about-content">
@@ -82,27 +98,29 @@
 
             <div class="course-container">
                 <div class="course-card">
-                    <img src="ai .jpg" alt="AI & ML">
+                    <img src="/assets/ai .jpg" alt="AI & ML">
                     <h4><b>AI & Machine Learning</b></h4>
                     <p>Master AI concepts with hands-on projects and real-world applications.</p>
                     <button>Enroll Now</button>
                 </div>
 
                 <div class="course-card">
-                    <img src="web dev.jpg" alt="Web Development">
+                    <img src="/assets/web dev.jpg" alt="Web Development">
                     <h3><b>Web Development</b></h3>
                     <p>Learn HTML, CSS, JavaScript, React, and more to build dynamic websites.</p>
                     <button>Enroll Now</button>
                 </div>
 
                 <div class="course-card">
-                    <img src="cyber.jpg" alt="Cybersecurity">
+                    <img src="/assets/cyber.jpg" alt="Cybersecurity">
                     <h3>Cybersecurity</h3>
                     <p>Understand ethical hacking, network security, and secure applications.</p>
                     <button>Enroll Now</button>
                 </div>
             </div>
         </section>
+
+
         <section id="contact">
             <h2>Contact Us</h2>
             <h4>If you have any query Contact Us- </h4>
@@ -122,17 +140,19 @@
                 </div>
             </div>
         </section>
+
     </main>
+
+
     <footer>
         <div class="decorative-wave"></div>
         <div class="footer-container">
             <div class="footer-logo">
                 <img src="logo.png" alt="SkillFlow Logo">
-                <span>
-                    <h2><b>SkillFlow</b></h2>
-                </span>
+                <h2><b>SkillFlow</b></h2>
                 <p class="para">Empowering Learning Through AI</p>
             </div>
+            
             <div class="footer-links">
                 <h2><b>Quick Links</b></h2>
                 <ul>
@@ -142,13 +162,15 @@
                     <li><i class="fas fa-envelope"></i> <a href="#contact">Contact</a></li>
                 </ul>
             </div>
+    
             <div class="footer-contact">
                 <h2><b>Contact</b></h2>
                 <ul class="contact-info">
-                    <li>skillflow_content@website.ac.in</li>
-                    <li>97432678XX</li>
+                    <li><i class="fas fa-envelope"></i> skillflow_content@website.ac.in</li>
+                    <li><i class="fas fa-phone-alt"></i> 97432678XX</li>
                 </ul>
             </div>
+    
             <div class="footer-social">
                 <h2><b>Follow Us</b></h2>
                 <div class="social-icons">
@@ -160,12 +182,14 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <h4>&copy; 2025 SkillFlow. All Rights Reserved.</h4>
+            <h4>&copy; 2025 <span class="glow-text">SkillFlow</span>. All Rights Reserved.</h4>
         </div>
     </footer>
+    
+
     <script src="script.js"></script>
 
-   
+
 
 </body>
 
