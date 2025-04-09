@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: #f1f5f9;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-container {
+    background: #1e293b;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    width: 90%;
+    max-width: 400px;
+}
+
+.auth-container h2 {
+    text-align: center;
+    color: #60a5fa;
+    margin-bottom: 1rem;
+}
+
+.auth-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.auth-toggle button {
+    background: none;
+    border: none;
+    color: #94a3b8;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    padding-bottom: 0.25rem;
+    border-bottom: 2px solid transparent;
+}
+
+.auth-toggle button.active {
+    color: #3b82f6;
+    border-bottom-color: #3b82f6;
+}
+
+.auth-form {
+    display: none;
+}
+
+.auth-form.active {
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #334155;
+    color: #f1f5f9;
+}
+
+input::placeholder {
+    color: #94a3b8;
+}
+
+button.submit-btn {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #3b82f6;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button.submit-btn:hover {
+    background-color: #2563eb;
+    transform: scale(1.03);
+}
+
+button.submit-btn:active {
+    transform: scale(0.98);
+}
+
+.google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: white;
+    color: #1e293b;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.google-btn:hover {
+    background-color: #f1f5f9;
+}
